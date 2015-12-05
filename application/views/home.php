@@ -17,7 +17,7 @@
                 </button>
                 <!--Brand / Logo start-->
                 <a class="navbar-brand scroll-to" href="#page-top">
-                    <img src="<?=base_url('assets/')?>/ieee/ieee1.gif" class="img-responsive" alt="Accommodation Landing Page"/>
+                    <img src="<?=base_url('assets/')?>/logo.png" class="img-responsive" alt="Accommodation Landing Page"/>
                 </a>
                 <!--Brand / Logo end-->
             </div>
