@@ -345,7 +345,7 @@ h6 {
 .features h2 {
   font-size: 36px;
   font-weight: 300;
-  margin: 0 0 120px 0;
+  margin: 20px 0 40px 0;
   padding: 0;
   color: #4a4a4a;
 }
@@ -853,13 +853,13 @@ h6 {
 -------------------------------------*/
 .reviews {
   padding: 80px 0 85px 0;
-  background: #ffffff url("../img/review-background.jpg") no-repeat center fixed;
+  background: #ffffff url("../img/review-background.png") no-repeat center fixed;
   background-size: cover;
 }
 .reviews h2 {
   font-size: 36px;
   font-weight: 300;
-  color: #4a4a4a;
+  color: #fff;
 }
 .reviews .review-controls {
   text-align: right;
@@ -1216,12 +1216,13 @@ h6 {
     margin: 0 0 20px 0; !important
 }
 .contact {
-  padding: 80px 0 85px 0;
+  padding: 0px 0 85px 0;
 }
 .contact h2 {
   font-size: 36px;
   font-weight: 300;
   margin-bottom: 20px;
+  margin-top:2em;
   color: #4a4a4a;
 }
 .contact h3 {
@@ -2218,6 +2219,7 @@ footer:after {
   -------------------------------------*/
   .features .feature {
     margin-bottom: 35px;
+    height: auto;
   }
   /* 8. Room Tabs 992px
   -------------------------------------*/

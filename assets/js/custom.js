@@ -220,7 +220,7 @@
     var marker = new google.maps.Marker({
             map: map,
             position: {lat: 8.54668, lng: 76.9052369},
-            icon: 'localhost/csis/assets/img/mapmarker.png',
+            icon: 'assets/img/mapmarker.png',
             title: 'College of Engineering, Trivandum'
     });
 

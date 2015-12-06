@@ -25,7 +25,7 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a class="scroll-to" href="#sc-features">ABOUT</a></li>
                     <li><a class="scroll-to" href="#sc-reviews">SPEAKERS AND SESSIONS</a></li>
-                    <li><a href="<?=base_url('registration')?>">REGISTRATION</a></li>
+                    <li><a class="scroll-to" href="#sc-attractions">REGISTRATION</a></li>
                     <li><a class="scroll-to" href="#sc-schedule">HOSPITALITY</a></li>
                     <li><a class="scroll-to" href="#sc-location">MAP</a></li>
                     <li><a class="scroll-to" href="#sc-contactus">CONTACT US</a></li>
@@ -56,7 +56,7 @@
 
 
     <!--Features start-->
-    <section class="features" id="sc-features" style="height:1130px;padding-top: 18px;">
+    <section class="features" id="sc-features" style="padding-top: 18px;">
         <div class="container">
                 <div class="row">
                     <div class="col-md-6">
@@ -128,7 +128,7 @@
                     <!--Review Item end-->
                 </div>
                 <div class="col-md-6" >
-                                <p>Speakers and sessions will be announced soon...</p>
+                                <p style="color:white">Speakers and sessions will be announced soon...</p>
                             </div>
 
             </div>
@@ -183,8 +183,9 @@
     </section> -->
                 </div>
             </div>
-            <div class="col-md-6 col-md-offset-5" >
-                                <p>Coming Soon!!!</p>
+            <div class="col-md-10 col-md-offset-1" >
+                                <p>Registration will be one-point for IEEE Computer Society members and two-point for non Computer Society members (IEEE & non-IEEE members).
+Registration will start soon, so stay tuned to our FB page...</p>
                             </div>
 
         </div>
@@ -197,14 +198,19 @@
             <div class="newsletter-box sc-animate" data-effect="swing">
                 <div class="newsletter-box-icon"><i class="icon-home"></i></div>
                 <div class="row">
-                    <div class="col-md-10 col-md-offset-1">
-                        <h3>HOSPITALITY</h3>
-                    </div>
 
-                    <div class="col-md-5 col-md-offset-5" >
-                                <p>UNDER CONSTRUCTION</p>
-                            </div>
-                    
+                    <h2 style="text-align:center;padding-bottom:1em">HOSPITALITY</h2>
+                    <div class="col-md-6">
+
+                    <img src="<?=base_url('assets/img/hospi.jpg')?>" style="width:100%">
+
+
+                    </div>
+                       <div class="col-md-6" style="padding:7em 1em;font-size:1.3em;">
+                        
+​Accommodation is provided at Mar Gregarious ​Renewal Centre for Boys and Girls. More details on travel from Railway Station/Airport will be updated later.
+
+                    </div>
                        
                     </form>
 
@@ -315,7 +321,7 @@
                 </div>
                 <div class="col-md-6">
                     <ul class="footer-social-media">
-                        <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/ieeecsis/"><i class="fa fa-facebook fa-fw"></i></a></li>
                     </ul>
                 </div>
             </div>

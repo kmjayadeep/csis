@@ -74,6 +74,16 @@
                         </div>
                         <br>
                         <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
+                            <input type="number" name="phone" class="form-control" placeholder="Phone No">
+                        </div>
+                        <br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                            <input type="email" name="email" class="form-control" placeholder="Email Id">
+                        </div>
+                        <br>
+                        <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-home fa-fw"></i></span>
                           <select class="form-control">
                             	<option disabled="disabled" selected="selected">Section</option>
@@ -139,14 +149,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <p class="footer-copyright">
-                        &copy;  All rights reserved.
+                        &copy;  IEEE CET Computer Society Chapter Web Team.
                     </p>
                 </div>
                 <div class="col-md-6">
                     <ul class="footer-social-media">
-                        <li><a href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
-                        <li><a href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
-                        <li><a href="https://www.facebook.com/ieeecsis/"><i class="fa fa-facebook fa-fw"></i></a></li>
+                        <li><a target="_blank" href="https://www.facebook.com/ieeecsis/"><i class="fa fa-facebook fa-fw"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -158,16 +166,4 @@
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="<?=base_url('assets/')?>/bower_components/jquery/dist/jquery.min.js"></script>
-
-<script src="<?=base_url('assets/')?>/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
-<script src="<?=base_url('assets/')?>/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="<?=base_url('assets/')?>/bower_components/jquery-animatenumber/jquery.animateNumber.min.js"></script>
-<script src="<?=base_url('assets/')?>/bower_components/bootstrap-3-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?=base_url('assets/')?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- Google Maps Api -->
-<script style="" type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
-
-
-<script src="<?=base_url('assets/')?>/js/custom.js"></script>
