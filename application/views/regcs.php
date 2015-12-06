@@ -47,7 +47,7 @@
                     <h2  class="head1">REGISTRATION</h2>
  <section class="contact" id="sc-contact">
         <div class="container">
-            <h2>For IEEE Computer Society Members</h2><br/>
+            <h2 style="margin-top:0px">For IEEE Computer Society Members</h2><br/>
             <form action="#" id="contact-form">
                 <input type="hidden" name="action" value="send_contact_form"/>
 
@@ -123,7 +123,7 @@
 
                         </div>
                         <div class="regfooter">
-                            Note : Accomodation for 27th feb is included in the registration fee. For accomodation on 26th and 28th, an amount of Rs.100/day should be paid
+                            Note : Accomodation for 27<sup>th</sup> Feb is included in the registration fee. For accomodation on 26<sup>th</sup> and 28<sup>th</sup>, an amount of &#x20B9<b></b>100/day should be paid
                         </div>
                         <br>
                                  <p class="contact-form-info">*All fields are required.</p>
