@@ -251,24 +251,35 @@ Registration will start soon, so stay tuned to our FB page...</p>
                     <div class="contact-header">
                         <div class="row">
                             <div class="col-md-6">
-                                <form action="#" id="contact-form">
-                <input type="hidden" name="action" value="send_contact_form"/>
+                             <form method="POST" action="http://free.allforms.mailjol.net/u/41b7ffe3.php" id="contact">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                    <input type="text" name="name" class="form-control" placeholder="Email">
+                                </div>
+                                <textarea form="contact" name="content"cols="10" rows="5" class="form-control" style="background-color: #f1f1f1;border-bottom-width: 1px;padding-bottom: 20px;margin-bottom: 13px;"></textarea>
+                                <p class="contact-form-info">*All fields are required.</p>
+  
+                                <input type="submit" value="Send" class="btn btn-color1 btn-contact-form">
+                            </form> 
+                                <!-- <form method="POST" action="http://free.allforms.mailjol.net/u/41b7ffe3.php" id="contact-form">
+                                    <input type="hidden" name="action" value="send_contact_form"/>
 
-                <div class="alert hidden" id="contact-form-msg"></div>
-                <div class="row">
-                    <div class="col-md-12 ">
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                            <input type="text" name="name" class="form-control" placeholder="Email">
-                        </div>
-                        <textarea cols="10" rows="5" class="form-control" style="background-color: #f1f1f1;border-bottom-width: 1px;padding-bottom: 20px;margin-bottom: 13px;"></textarea>
-                                 <p class="contact-form-info">*All fields are required.</p>
-                        <button class="btn btn-color1 btn-contact-form">Send<i class="fa fa-angle-right"></i></button>
-                    </div>
+                                    <div class="alert hidden" id="contact-form-msg"></div>
+                                    <div class="row">
+                                        <div class="col-md-12 ">
+                                            <div class="input-group">
+                                                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                                                    <input type="text" name="name" class="form-control" placeholder="Email">
+                                            </div>
+                                        <textarea cols="10" rows="5" class="form-control" style="background-color: #f1f1f1;border-bottom-width: 1px;padding-bottom: 20px;margin-bottom: 13px;"></textarea>
+                                        <p class="contact-form-info">*All fields are required.</p>
+                                        
+                                        <button class="btn btn-color1 btn-contact-form">Send<i class="fa fa-angle-right"></i></button>
+                                    </div>
                     
-                </div>
-                
-            </form>
+                                    </div>
+                                    <input type="submit">
+                                </form> -->
                             </div>
                             <div class="col-md-6">
                                 <div class="contact-person">EVENT COORDINATORS</div>
