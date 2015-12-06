@@ -66,7 +66,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                          <select class="form-control">
+                          <select style="color: #57BCCA"class="form-control">
                                 <option disabled="disabled" selected="selected">Gender</option>
                                 <option>Male</option>
                                 <option>Female </option>
@@ -85,10 +85,19 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-home fa-fw"></i></span>
-                          <select class="form-control">
+                          <select style="color: #57BCCA" class="form-control">
                             	<option disabled="disabled" selected="selected">Section</option>
-                            	<option>Kerala</option>
-                            	<option>Madras</option>
+                                <option>Banglore</option>
+                                <option>Bombay</option>
+                                <option>Kolkata</option>
+                                <option>Delhi</option>
+                                <option>Gujrat</option>
+                                <option>Hyderabad</option>
+                                <option>Kerala</option>
+                                <option>Kharagpur</option>
+                                <option>Madras</option>
+                                <option>Pune</option>
+                                <option>Uttar Pradesh</option>
                             </select>
                         </div>
                         <br>
@@ -99,7 +108,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-coffee fa-fw"></i></span>
-                            <select class="form-control">
+                            <select style="color: #57BCCA" class="form-control">
                             	<option disabled="disabled" selected="selected">Food Preference</option>
                             	<option>Veg</option>
                             	<option>Non Veg</option>

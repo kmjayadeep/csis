@@ -288,15 +288,17 @@ Registration will start soon, so stay tuned to our FB page...</p>
                                     <img class="img-responsive" src="<?=base_url('assets')?>/img/torso.png" alt="Contact Image"/>
                                 </div>
                                 
-                                <div class="contact-title">SANJU SAJEEV</div>
-                                <div class="contact-phone"><i class="fa fa-mobile"></i>+91 9020057354</div>
+                                <div class="contact-title">KEVIN JOSEPH</div>
+                                <div class="contact-phone"><i class="fa fa-mobile"></i>+91 7559099023</div>
+                                <div class="contact-mail"><i class="fa fa-envelope"></i>Kevin.Joseph.IN@ieee.org</div>
                                 <br><br><br>
                                 <div class="contact-img">
                                     <img class="img-responsive" src="<?=base_url('assets')?>/img/torso.png" alt="Contact Image"/>
                                 </div>
                                 
-                                <div class="contact-title">KM JAYADEEP</div>
-                                <div class="contact-phone"><i class="fa fa-mobile"></i>+91 9567125807</div>
+                                <div class="contact-title">DANIEL JAMES</div>
+                                <div class="contact-phone"><i class="fa fa-mobile"></i>+91 9061469692</div>
+                                <div class="contact-mail"><i class="fa fa-envelope"></i>Daniel.James.IN@ieee.org</div>
                             </div>
                         </div>
                     </div>
