@@ -88,10 +88,8 @@
                 <!--Feature 3 start-->
                 <div class="col-md-3 col-sm-6">
                     <div class="feature">
-                        
-                        <h3 style="text-align:center">IEEE COMPUTER<br> SOCIETY SYMPOSIUM 2016</h3>
-
-                        <p>The IEEE Computer Society Symposium 2016 focuses on bringing together and improving the future activities of the different chapters of Computer Societies all over India. The IEEE Computer Society Symposium provides the students with opportunities to interact with the esteemed speakers and professionals of the field from the various multidisciplinary workshops and talks facilitating the identification, creation, capture and exchange of highly peer-reviewed scientific and technological knowledge. Participants  also have the opportunity to match their wits in various competitions like web development and idea presentation and win fabulous prizes!</p>
+                    <img src="<?=base_url('assets')?>/img/csslogo.png">
+                        <p><br/>The IEEE Computer Society Symposium 2016 focuses on bringing together and improving the future activities of the different chapters of Computer Societies all over India. The IEEE Computer Society Symposium provides the students with opportunities to interact with the esteemed speakers and professionals of the field from the various multidisciplinary workshops and talks facilitating the identification, creation, capture and exchange of highly peer-reviewed scientific and technological knowledge. Participants  also have the opportunity to match their wits in various competitions like web development and idea presentation and win fabulous prizes!</p>
                     </div>
                 </div>
                 <!--Feature 3 end-->
@@ -106,7 +104,7 @@
                             <br>
                         <h1 style="text-align:center">CET</h1>
                     </div>
-                        <p><br><br><br><br><br>College of Engineering Trivandrum is one of the nation’s oldest technical institutes and is among the top 40 engineering colleges in India. Since its initiation in 1939, CET has harbored and nurtured the most brilliant technical minds in the State. The IEEE student branch of the college is a well organized, robust body that takes up a host of activities throughout the year including guest lectures, video screening, technical quizzes, mock-interviews and design contests aiming to create an awareness on the budding engineers on the latest in technological innovations and foster their technical aspirations.</p>
+                        <p style="margin-top:10px"><br><br><br><br><br>College of Engineering Trivandrum is one of the nation’s oldest technical institutes and is among the top 40 engineering colleges in India. Since its initiation in 1939, CET has harbored and nurtured the most brilliant technical minds in the State. The IEEE student branch of the college is a well organized, robust body that takes up a host of activities throughout the year including guest lectures, video screening, technical quizzes, mock-interviews and design contests aiming to create an awareness on the budding engineers on the latest in technological innovations and foster their technical aspirations.</p>
                     </div>
                 </div>
                 <!--Feature 4 end-->
