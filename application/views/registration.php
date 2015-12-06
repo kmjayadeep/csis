@@ -1,12 +1,10 @@
-
 </head>
 <body>
-<div id="page-top"></div>
 
 <!--Navigation Top start-->
-<section class="top-navbar container navbar-fixed-top">
+<section class="top-navbar container navbar-fixed-top" style="width:90%">
     <nav class="navbar navbar-default" id="navigation-top">
-        <div class="container-fluid">
+        <div class="container-fluid" style="background:white">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
                         data-target="#bs-example-navbar-collapse-1">
@@ -16,15 +14,15 @@
                     <span class="icon-bar"></span>
                 </button>
                 <!--Brand / Logo start-->
-                <a class="navbar-brand scroll-to" href="#page-top">
-                    <img src="<?=base_url('assets/')?>/logo.png" class="img-responsive" alt="Accommodation Landing Page"/>
+                <a class="navbar-brand scroll-to" href="#page-top" style="height: 71px;padding-top: 0px;margin-top: 0px;padding-bottom:0px;">
+                    <img src="<?=base_url('assets')?>/ieee/logo.png" class="img-responsive" alt="Accommodation Landing Page" style="width:260px"/>
                 </a>
                 <!--Brand / Logo end-->
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <!-- Nav-Links start -->
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a class="scroll-to" href="<?=base_url()?>">HOME</a></li>
+                    <li class="active"><a href="<?=base_url()?>">HOME</a></li>
                     <li>
                       
                     </li>
@@ -157,3 +155,19 @@
     <!--Footer end-->
 </div>
 <!--End content before Slider-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="<?=base_url('assets/')?>/bower_components/jquery/dist/jquery.min.js"></script>
+
+<script src="<?=base_url('assets/')?>/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script src="<?=base_url('assets/')?>/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="<?=base_url('assets/')?>/bower_components/jquery-animatenumber/jquery.animateNumber.min.js"></script>
+<script src="<?=base_url('assets/')?>/bower_components/bootstrap-3-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="<?=base_url('assets/')?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<!-- Google Maps Api -->
+<script style="" type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
+
+
+<script src="<?=base_url('assets/')?>/js/custom.js"></script>

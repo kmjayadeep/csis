@@ -172,7 +172,7 @@ h6 {
 /* 4. Top Navbar
 -------------------------------------*/
 .top-navbar {
-  background-color: #fff;
+  background-color: #ffffff;
   min-height: 100px;
   padding: 0 10px;
   border-bottom: 5px solid #57bcca;
@@ -180,10 +180,11 @@ h6 {
 }
 .top-navbar .navbar-brand {
   margin-top: 6px;
+  border-radius: 5px;
 }
 .top-navbar .navbar-default {
   border: none;
-  background-color: #ffffff;
+  background-color: #00ffff;
 }
 .top-navbar .navbar-default .navbar-nav {
   margin-top: 25px;
@@ -197,6 +198,7 @@ h6 {
   font-size: 16px;
   color: #57bcca;
   text-decoration: none;
+  border-radius: 5px;
 }
 .top-navbar .navbar-default .navbar-nav .active > a:after {
   content: '';
@@ -341,19 +343,18 @@ h6 {
   background-color: #f1f1f1;
 }
 .features h2 {
-  text-align: center;
-  font-size: 54px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 300;
   margin: 0 0 120px 0;
   padding: 0;
   color: #4a4a4a;
 }
 .features .feature {
-  height: 550px;
+  height: 759px;
   border-bottom: 7px solid #57bcca;
   background-color: #fff;
   padding-top: 34px;
-  text-align: center;
+  text-align: justify;
   -webkit-transition: all 0.5s ease;
           transition: all 0.5s ease;
 }
@@ -1215,7 +1216,7 @@ h6 {
     margin: 0 0 20px 0; !important
 }
 .contact {
-  padding: 0px 0 85px 0;
+  padding: 80px 0 85px 0;
 }
 .contact h2 {
   font-size: 36px;
@@ -1296,6 +1297,7 @@ h6 {
   vertical-align: middle;
 }
 .contact .input-group.textbox textarea {
+  background-color: #f1f1f1;
   float: left;
   width: 490px;
 }
@@ -1795,7 +1797,7 @@ footer:after {
     padding-bottom: 70px;
   }
   .features h2 {
-    font-size: 42px;
+    font-size: 36px;
     margin: 0 0 65px 0;
   }
   .features .feature {
@@ -2835,14 +2837,7 @@ footer:after {
     display: block !important;
   }
 }
-
-
 .acco div{
    /*float: left;*/
    display: inline-block;
 }
-/*.acco:after{
-    content: "";
-    display: block;
-    clear: both;
-}*/

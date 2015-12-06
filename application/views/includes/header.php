@@ -41,24 +41,4 @@
     <![endif]-->
 
     <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="<?=base_url('assets/')?>/img/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=base_url('assets/')?>/img/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?=base_url('assets/')?>/img/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="<?=base_url('assets/')?>/img/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="<?=base_url('assets/')?>/img/ico/favicon.png">
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="<?=base_url('assets/')?>/bower_components/jquery/dist/jquery.min.js"></script>
-
-<script src="<?=base_url('assets/')?>/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
-<script src="<?=base_url('assets/')?>/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
-<script src="<?=base_url('assets/')?>/bower_components/jquery-animatenumber/jquery.animateNumber.min.js"></script>
-<script src="<?=base_url('assets/')?>/bower_components/bootstrap-3-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="<?=base_url('assets/')?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
-<!-- Google Maps Api -->
-<script style="" type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
-
-
-<script src="<?=base_url('assets/')?>/js/custom.js"></script>
+    <link rel="shortcut icon" href="<?=base_url('assets/')?>/logo.png">

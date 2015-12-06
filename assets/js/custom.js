@@ -6,8 +6,8 @@
 
     // Location Address
     //-------------------------------------------------------------------------------
-    var companyName = 'College Of Engineering Trivandrum';
-    var address = 'College Of Engineering, Sreekariyam, Kerala, India'; // Enter your Address
+    var companyName = 'CSIS';
+    var address = 'College Of Engineering, Trivandum'; // Enter your Address
 
 
     // Navigation Close on Click
@@ -208,43 +208,23 @@
     geocoder = new google.maps.Geocoder();
 
     var mapOptions = {
-        zoom: 14,
+        zoom: 15,
         scrollwheel: false,
         draggable: draggable,
         mapTypeControl: false,
-        center: new google.maps.LatLng(0, 0),
+        center: new google.maps.LatLng(8.54668,76.9052369),
         mapTypeId: google.maps.MapTypeId.ROADMAP
     }
 
     map = new google.maps.Map(document.getElementById('location-map'), mapOptions);
-
-    var contentString = '<div id="content">' +
-        '<strong>'+companyName+'</strong><br>' +
-        'Address: ' +address+
-        '</div>';
-
-    var infowindow = new google.maps.InfoWindow({
-        content: contentString
+    var marker = new google.maps.Marker({
+            map: map,
+            position: {lat: 8.54668, lng: 76.9052369},
+            icon: 'localhost/csis/assets/img/mapmarker.png',
+            title: 'College of Engineering, Trivandum'
     });
 
-    geocoder.geocode({'address': address}, function (results, status) {
-        if (status == google.maps.GeocoderStatus.OK) {
-            map.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-                map: map,
-                position: results[0].geometry.location,
-                icon: 'assets/img/mapmarker.png',
-                title: 'Uluru (Ayers Rock)'
-            });
-
-            google.maps.event.addListener(marker, 'click', function () {
-                infowindow.open(map, marker);
-            });
-
-        } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-        }
-    });
+        
 
 
 
