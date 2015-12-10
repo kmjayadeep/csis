@@ -2856,3 +2856,7 @@ footer:after {
    /*float: left;*/
    display: inline-block;
 }
+.navbar-brand img{
+  width:220px !important;
+  padding-top: 10px;
+}
