@@ -92,7 +92,7 @@
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-home fa-fw"></i></span>
                           <select name="sec" style="color: #57BCCA" class="form-control">
-                            	<option disabled="disabled" selected="selected">Section</option>
+                                <option disabled="disabled" selected="selected">Section</option>
                                 <option>Banglore</option>
                                 <option>Bombay</option>
                                 <option>Kolkata</option>
@@ -238,10 +238,11 @@
             $.post("<?=base_url('cfv/register')?>",data,function(res,status){
                 $('#loading').hide();
                 $('.msg').hide();
-                console.log(res)
-                if(res.status){
+                console.log(res);
+                var result=$.parseJSON(res);
+                if(result.status==true){
                     successAlert('Success', "We'll get back to you soon, if you are selected as volunteer");
-                    window.location.replace('/');
+                    setTimeout(function() {window.location.replace('/');}, 5000);
                 }
                 else
                     errorAlert('Something went wrong');
