@@ -28,7 +28,7 @@
     <!-- Simple Line Icons -->
     <link href="<?=base_url('assets/')?>/bower_components/simple-line-icons/css/simple-line-icons.css" rel='stylesheet' type='text/css'>
 
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <!-- Theme Style -->
     <link rel="stylesheet" href="<?=base_url('assets/')?>/css/styles.css">
     <!-- Available main styles: styles-blue.css, styles-ochre.css -->

@@ -1,3 +1,4 @@
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -48,7 +49,10 @@
  <section class="contact" id="sc-contact">
         <div class="container">
             <h2 style="margin-top:0px"></h2><br/>
-            <form action="#" id="contact-form">
+
+            <form method="post" id="contact-form">
+                
+
                 <input type="hidden" name="action" value="send_contact_form"/>
 
                 <div class="alert hidden" id="contact-form-msg"></div>
@@ -59,14 +63,15 @@
                             <input type="text" name="name" class="form-control" placeholder="Name">
                         </div>
                         <br>
+                        <input type="hidden" value="1" name="submit">
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-barcode fa-fw"></i></span>
-                            <input type="text" name="mid" class="form-control" placeholder="Membership Id">
+                            <input type="number" name="mid" class="form-control" placeholder="Membership Id">
                         </div>
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                          <select style="color: #57BCCA"class="form-control">
+                          <select name="gen" style="color: #57BCCA"class="form-control">
                                 <option disabled="disabled" selected="selected">Gender</option>
                                 <option>Male</option>
                                 <option>Female </option>
@@ -75,6 +80,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
+                            <span class="input-group-addon" style="font-size:20px">(+91)</span>
                             <input type="number" name="phone" class="form-control" placeholder="Phone No">
                         </div>
                         <br>
@@ -85,7 +91,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-home fa-fw"></i></span>
-                          <select style="color: #57BCCA" class="form-control">
+                          <select name="sec" style="color: #57BCCA" class="form-control">
                             	<option disabled="disabled" selected="selected">Section</option>
                                 <option>Banglore</option>
                                 <option>Bombay</option>
@@ -103,7 +109,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                          <select style="color: #57BCCA"class="form-control">
+                          <select name="mem" style="color: #57BCCA"class="form-control">
                                 <option disabled="disabled" selected="selected">Are you a CS member?</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -112,12 +118,12 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-book fa-fw"></i></span>
-                            <input type="text" name="email" class="form-control" placeholder="College">
+                            <input type="text" name="college" class="form-control" placeholder="College">
                         </div>
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                          <select style="color: #57BCCA"class="form-control">
+                          <select name="whatsapp"style="color: #57BCCA"class="form-control">
                                 <option disabled="disabled" selected="selected">Are you ready to join discussion in WhatsApp?</option>
                                 <option>Yes</option>
                                 <option>No</option>
@@ -126,10 +132,10 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-clock-o fa-fw"></i></span>
-                            <input type="number" name="hrs" class="form-control" placeholder="How much time can you spend for CSIS daily?">
+                            <input type="text" name="hrs" class="form-control" placeholder="How much time can you spend for CSIS weekly?">
                         </div>
                         <br>
-                            <textarea placeholder="Previous volunteering experiences"form="contact" name="content"cols="10" rows="5" class="form-control" style=" color:#57BCCA; background-color: #f1f1f1;border-bottom-width: 1px;padding-bottom: 20px;margin-bottom: 13px;"></textarea>
+                            <textarea form="contact-form" placeholder="Previous volunteering experiences"form="contact" name="exp"cols="10" rows="5" class="form-control" style=" color:#57BCCA; background-color: #f1f1f1;border-bottom-width: 1px;padding-bottom: 20px;margin-bottom: 13px;"></textarea>
                         <br>
                         <h4>Which field would you like to volunteer in?</h4>
 
@@ -137,19 +143,20 @@
                         <div class="acco">
 
                          <div class="input-group">
-                        <input type="checkbox" class="form-control">Design
+                        <input name="des" type="checkbox" class="form-control">Design
                         </div>
                          <div class="input-group">
-                        <input type="checkbox" class="form-control">Publicity
+                        <input name="pub" type="checkbox" class="form-control">Publicity
                         </div>
 
                         </div>
-                                 <p class="contact-form-info">*All fields are required.</p>
-                        <button class="btn btn-color1 btn-contact-form">Proceed to payment<i class="fa fa-angle-right"></i></button>
+                        <p style="display:none; color:red" id="err" >Please enter all fields</p>
+                        <p class="contact-form-info">*All fields are required.</p>
+                        <button class="btn btn-color1 btn-contact-form" onclick="register(event)">Submit<i class="fa fa-angle-right"></i></button>
                     </div>
                     
                 </div>
-                
+                <div id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
             </form>
         </div>
     </section>
@@ -180,8 +187,49 @@
     </footer>
     <!--Footer end-->
 </div>
+<div id="loading"style="width:100%; height:100%; position:fixed; z-index:100; top:0; text-align:center; padding-top:30%; background: rgba(255,255,255,0.6); display:none;">
+    <img src="<?=base_url('assets')?>/img/loading.gif">
+</div>
 <!--End content before Slider-->
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="<?=base_url('assets/')?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?=base_url('assets/')?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function register(event){
+        var test={}
+        test.secret="6Lel2BITAAAAALgQHxnGgq52pMuDETpFy6aXiFIX"
+        test.response=grecaptcha.getResponse()
+        $.post("https://www.google.com/recaptcha/api/siteverify",test,function(response){
+            console.log(response)
+        })
+        event.preventDefault();
+        var data = {};
+        data.name=$('input[name="name"]').val();
+        data.mid=$('input[name="mid"]').val();
+        data.gen=$('select[name="gen"]').val();
+        data.phone=$('input[name="phone"]').val();
+        data.sec=$('select[name="sec"]').val();
+        data.mem=$('select[name="mem"]').val();
+        data.college=$('input[name="college"]').val();
+        data.whatsapp=$('select[name="whatsapp"]').val();
+        data.hrs=$('input[name="hrs"]').val();
+        data.exp=$('textarea[name="exp"]').val();
+        data.des=$('input[name="des"]').is(':checked');
+        data.pub=$('input[name="pub"]').is(':checked');
+        data.email=$('input[name="email"]').val();
+        console.log(data)
+        $('#loading').show();
+        if(!(data.name&&data.mid&&data.gen&&data.phone&&data.sec&&data.mem&&data.college&&data.whatsapp&&data.hrs&&data.exp&&data.email&&(data.des||data.pub))){
+            $('#err').show()
+            $('#loading').hide();
+        }
+        else
+        {
+            $.post("<?=base_url('cfv/register')?>",data,function(res,status){
+                $('#loading').hide();
+                window.location.replace('/');
+            })
+        }
+    }
+</script>
