@@ -137,9 +137,7 @@
                         <br>
                             <textarea form="contact-form" placeholder="Previous volunteering experiences"form="contact" name="exp"cols="10" rows="5" class="form-control" style=" color:#57BCCA; background-color: #f1f1f1;border-bottom-width: 1px;padding-bottom: 20px;margin-bottom: 13px;"></textarea>
                         <br>
-                        <h4>Which field would you like to volunteer in?</h4>
-
-
+                        <h4 style="margin-bottom:1em">Which field would you like to volunteer in?</h4>
                         <div class="acco">
 
                          <div class="input-group">
@@ -150,13 +148,21 @@
                         </div>
 
                         </div>
-                        <p style="display:none; color:red" id="err" >Please enter all fields</p>
-                        <p class="contact-form-info">*All fields are required.</p>
+                        <p class="contact-form-info" style="float:none;margin-top:0;margin-bottom:0">* All fields are required.</p>
+                        <div class="alert alert-danger msg" id="err">
+                            Please Enter all fields
+                        </div>
+                        <div class="alert alert-danger msg" id="wrong">
+                            Something went wrong. Please try again
+                        </div>
+                        <div class="alert alert-danger msg" id="nocap">
+                            Please Prove that you're not a robot
+                        </div>
+                        <div id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
                         <button class="btn btn-color1 btn-contact-form" onclick="register(event)">Submit<i class="fa fa-angle-right"></i></button>
                     </div>
                     
                 </div>
-                <div id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
             </form>
         </div>
     </section>
@@ -196,15 +202,11 @@
 <script src="<?=base_url('assets/')?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?=base_url('assets/')?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <script type="text/javascript">
+    $('.msg').hide();
     function register(event){
-        var test={}
-        test.secret="6Lel2BITAAAAALgQHxnGgq52pMuDETpFy6aXiFIX"
-        test.response=grecaptcha.getResponse()
-        $.post("https://www.google.com/recaptcha/api/siteverify",test,function(response){
-            console.log(response)
-        })
         event.preventDefault();
         var data = {};
+        data.response = grecaptcha.getResponse()
         data.name=$('input[name="name"]').val();
         data.mid=$('input[name="mid"]').val();
         data.gen=$('select[name="gen"]').val();
@@ -221,14 +223,22 @@
         console.log(data)
         $('#loading').show();
         if(!(data.name&&data.mid&&data.gen&&data.phone&&data.sec&&data.mem&&data.college&&data.whatsapp&&data.hrs&&data.exp&&data.email&&(data.des||data.pub))){
-            $('#err').show()
+            $('#err').slideDown()
             $('#loading').hide();
         }
-        else
-        {
+        else if(0&&!data.response){
+            $('.msg').hide();
+            $('#nocap').slideDown();
+        }
+        else{
             $.post("<?=base_url('cfv/register')?>",data,function(res,status){
                 $('#loading').hide();
-                window.location.replace('/');
+                $('.msg').hide();
+                console.log(res)
+                if(res.status)
+                    window.location.replace('/');
+                else
+                    alert('something wrong');
             })
         }
     }
