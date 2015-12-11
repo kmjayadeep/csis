@@ -158,7 +158,7 @@
                         <div class="alert alert-danger msg" id="nocap">
                             Please Prove that you're not a robot
                         </div>
-                        <div id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
+                        <div style="padding-left: 25%;"id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
                         <button class="btn btn-color1 btn-contact-form" onclick="register(event)">Submit<i class="fa fa-angle-right"></i></button>
                     </div>
                     
@@ -201,6 +201,10 @@
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="<?=base_url('assets/')?>/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="<?=base_url('assets/')?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<link rel='stylesheet' href='<?=base_url('assets/')?>/bower_components/jAlert-master/src/jAlert-v3.css'>
+<script src='<?=base_url('assets/')?>/bower_components/jAlert-master/vendor/jquery-1.11.3.min.js'></script>
+<script src='<?=base_url('assets/')?>/bower_components/jAlert-master/src/jAlert-v3.js'></script>
+<script src='<?=base_url('assets/')?>/bower_components/jAlert-master/src/jAlert-functions.js'></script>
 <script type="text/javascript">
     $('.msg').hide();
     function register(event){
@@ -235,10 +239,12 @@
                 $('#loading').hide();
                 $('.msg').hide();
                 console.log(res)
-                if(res.status)
+                if(res.status){
+                    successAlert('Success', "We'll get back to you soon, if you are selected as volunteer");
                     window.location.replace('/');
+                }
                 else
-                    alert('something wrong');
+                    errorAlert('Something went wrong');
             })
         }
     }
