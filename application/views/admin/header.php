@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Flat Admin V.2 - Free Bootstrap Admin Templates</title>
+    <title>CSIS Admin</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
@@ -89,15 +89,15 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CSIS Admin<span class="caret"></span></a>
                             <ul class="dropdown-menu animated fadeInDown">
                                 <li class="profile-img">
-                                    <img src="<?=base_url()?>assets/img/profile/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
+                                    <img src="<?=base_url()?>assets/img/picjumbo.com_HNCK4153_resize.jpg" class="profile-img">
                                 </li>
                                 <li>
                                     <div class="profile-info">
                                         <h4 class="username">CSIS Admin</h4>
-                                        <p>emily_hart@email.com</p>
+                                        <p>admin@ieeecsis.org</p>
                                         <div class="btn-group margin-bottom-2x" role="group">
                                             <button type="button" class="btn btn-default"><i class="fa fa-user"></i> Profile</button>
-                                            <button type="button" class="btn btn-default"><i class="fa fa-sign-out"></i> Logout</button>
+                                            <button type="button" onclick="window.location='<?=base_url()?>admin/logout'" class="btn btn-default"><i class="fa fa-sign-out"></i> Logout</button>
                                         </div>
                                     </div>
                                 </li>

@@ -7,7 +7,7 @@ class Volunteers extends CI_Controller {
 	{
 		$data = array();
 		$this->load->library('session');
-		if(1||$this->session->login){
+		if($this->session->login){
 			$data['vol'] = $this->db->get_where('volunteer','status=1')->result_array();
 			$this->load->view('admin/header');
 			$this->load->view('admin/vol',$data);
