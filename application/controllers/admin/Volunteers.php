@@ -16,4 +16,12 @@ class Volunteers extends CI_Controller {
 		else
 			redirect('/admin/login');
 	}
+	public function delete($id=0)
+	{
+		$data=array();
+		$data['status']=0;
+		$this->db->where('mid',$id);
+		$this->db->update("volunteer",$data);
+		redirect('/admin/volunteers');
+	}
 }

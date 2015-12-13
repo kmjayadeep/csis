@@ -221,12 +221,18 @@
         data.whatsapp=$('select[name="whatsapp"]').val();
         data.hrs=$('input[name="hrs"]').val();
         data.exp=$('textarea[name="exp"]').val();
-        data.des=$('input[name="des"]').is(':checked');
-        data.pub=$('input[name="pub"]').is(':checked');
+        if($('input[name="des"]').is(':checked'))
+            data.des="yes";
+        else
+            data.des="no";
+        if($('input[name="pub"]').is(':checked'))
+            data.pub="yes";
+        else
+            data.pub="no";
         data.email=$('input[name="email"]').val();
         console.log(data)
         $('#loading').show();
-        if(!(data.name&&data.mid&&data.gen&&data.phone&&data.sec&&data.mem&&data.college&&data.whatsapp&&data.hrs&&data.exp&&data.email&&(data.des||data.pub))){
+        if(!(data.name&&data.mid&&data.gen&&data.phone&&data.sec&&data.mem&&data.college&&data.whatsapp&&data.hrs&&data.exp&&data.email&&(data.des=='yes'||data.pub=='yes'))){
             $('#err').slideDown()
             $('#loading').hide();
         }
@@ -235,6 +241,7 @@
             $('#nocap').slideDown();
         }
         else{
+            console.log(data);
             $.post("<?=base_url('cfv/register')?>",data,function(res,status){
                 $('#loading').hide();
                 $('.msg').hide();

@@ -23,7 +23,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12">
-                            <div class="card">
+                            <div class="card" style="overflow-x:scroll">
                                 <div class="card-header">
 
                                     <div class="card-title">
@@ -46,6 +46,8 @@
                                                 <th>Design</th>
                                                 <th>Publicity</th>
                                                 <th>Email</th>
+                                                <th>Time</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -53,12 +55,16 @@
                                             <tr>
                                             <?
                                             unset($v['status']);
-                                            unset($v['mem']);
+                                            $x=$v['mid'];
+                                            unset($v['mid']);
                                             foreach($v as $d){?>
                                                 <td>
                                                 <?=$d?>
                                                 </td>
                                             <? }?>
+                                            <td>
+                                                <button class="btn btn-color1 btn-contact-form" onclick="location.href='/admin/volunteers/delete/<?=$x?>'"><i class="fa fa-trash"></i></button>
+                                            </td>
                                             </tr>
                                         <? } ?>
                                         </tbody>

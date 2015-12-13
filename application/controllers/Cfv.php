@@ -65,19 +65,10 @@ class Cfv extends CI_Controller {
 		$a['whatsapp']=$this->input->post('whatsapp');
 		$a['hrs']=$this->input->post('hrs');
 		$a['exp']=$this->input->post('exp');
-		if($this->input->post('des'))
-			$a['des']='yes';
-		else
-			$a['des']='no';
-		if($this->input->post('pub'))
-			$a['pub']='yes';
-		else
-			$a['pub']='no';
+		$a['des']=$this->input->post('des');
+		$a['pub']=$this->input->post('pub');
 		$a['email']=$this->input->post('email');
-		if(!($a['name']&&$a['mid']&&$a['gen']&&$a['phone']&&$a['sec']&&$a['mem']&&$a['college']&&$a['whatsapp']&&$a['hrs']&&$a['exp']&&$a['email'])||($a['name']=='no'&&$a['name']=='no'))
-			$x['error']=1;
-		else
-			$this->db->insert("volunteer",$a);
+		$this->db->insert("volunteer",$a);
 		if($this->db->affected_rows()==1)
 			$out['status'] = true;
 		else

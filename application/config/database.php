@@ -64,10 +64,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'csis',
+	'hostname' => 'robocet.com',
+	'username' => 'robocet',
+	'password' => '_cn-4Fg3.iLo',
+	'database' => 'robocet_csis',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
