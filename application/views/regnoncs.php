@@ -47,7 +47,7 @@
                     <h2  class="head1">REGISTRATION</h2>
  <section class="contact" id="sc-contact">
         <div class="container">
-            <h2 style="margin-top:0px">For IEEE Computer Society Members</h2><br/>
+            <h2 style="margin-top:0px">For Non Computer Society Members</h2><br/>
             <form method="post" id="contact-form">
                 <input type="hidden" name="action" value="send_contact_form"/>
 
@@ -59,6 +59,16 @@
                             <input type="text" name="name" class="form-control" placeholder="Name">
                         </div>
                         <br>
+                                        <div class="input-group">
+                        <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                          <select name="mtype" style="color: #57BCCA"class="form-control">
+                                <option disabled="disabled" selected="selected">Membership Type</option>
+                                <option value="1">IEEE Member</option>
+                                <option value="0">Non IEEE Member</option>
+                            </select>
+                        </div>
+                        <br>
+
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-barcode fa-fw"></i></span>
                             <input type="number" name="mid" class="form-control" placeholder="Membership Id">
@@ -72,7 +82,8 @@
                                 <option>Female </option>
                             </select>
                         </div>
-                        <br>
+                        <br>        
+
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
                             <input type="number" name="phone" class="form-control" placeholder="Phone No">
@@ -106,35 +117,14 @@
                             <input type="text" name="college" class="form-control" placeholder="College">
                         </div>
                         <br>
-                        <div class="input-group">
-                            <span class="input-group-addon"><i class="fa fa-coffee fa-fw"></i></span>
-                            <select name="food" style="color: #57BCCA" class="form-control">
-                            	<option disabled="disabled" selected="selected">Food Preference</option>
-                            	<option>Veg</option>
-                            	<option>Non Veg</option>
-                            </select>
-                        </div>
-                        <br>
-                        <h2>Accomodation</h2>
 
+                        <textarea name="exp" class="form-control" style="background:#F1F1F1" placeholder="Give us a short peek into your IEEE Volunteering experiences"></textarea>
+                        <br/>
+                        <textarea name="why" class="form-control" style="background:#F1F1F1" placeholder="What makes you a good candidate for CSIS?"></textarea>
+                        <br/>
+                        <textarea name="expect" class="form-control" style="background:#F1F1F1" placeholder="What do you expect to gain from CSIS and other related events?"></textarea>
+                        <br/>
 
-                        <div class="acco">
-
-                         <div class="input-group">
-                        <input type="checkbox" name="day1" class="form-control">26-02-2016
-                        </div>
-                         <div class="input-group">
-                        <input type="checkbox" name="day2" class="form-control">27-02-2016
-                        </div>
-                         <div class="input-group">
-                        <input type="checkbox" name="day3" class="form-control">28-02-2016
-                        </div>
-
-                        </div>
-                        <div class="regfooter">
-                            Note : Accomodation for 27<sup>th</sup> Feb is included in the registration fee. For accomodation on 26<sup>th</sup> and 28<sup>th</sup>, an amount of &#x20B9<b></b>100/day should be paid
-                        </div>
-                        <br>
                         <p class="contact-form-info" style="float:none;margin-top:0;margin-bottom:0">* All fields are required.</p>
 
                         <div class="alert alert-danger msg" id="err">
@@ -146,7 +136,7 @@
 
                         <input type="hidden" name="register" value="1">
 
-                        <button id="register" class="btn btn-color1 btn-contact-form">Proceed to payment<i class="fa fa-angle-right"></i></button>
+                        <button id="register" class="btn btn-color1 btn-contact-form">Register for Phase 1<i class="fa fa-angle-right"></i></button>
 
 
 
@@ -205,34 +195,34 @@
             event.preventDefault()
             data = {}
             data.name = $('input[name="name"]').val()
+            data.mtype = $('select[name="mtype"]').val()
             data.mid = $('input[name="mid"]').val()
             data.sex = $('select[name="sex"]').val()
             data.phone = $('input[name="phone"]').val()
             data.email = $('input[name="email"]').val()
             data.section = $('select[name="section"]').val()
             data.college = $('input[name="college"]').val()
-            data.food = $('select[name="food"]').val()
-            data.acco1 = $('input[name="day1"]').is(':checked')
-            data.acco2 = $('input[name="day2"]').is(':checked')
-            data.acco3 = $('input[name="day3"]').is(':checked')
+            data.exp = $('textarea[name="exp"]').val()
+            data.why = $('textarea[name="why"]').val()
+            data.expect = $('textarea[name="expect"]').val()
             console.log(data)
 
 
-            if(!(data.name&&data.mid&&data.sex&&data.phone&&data.email&&data.section&&data.college&&data.food)){
+            if(!(data.name&&data.mtype&&data.sex&&data.phone&&data.email&&data.section&&data.college&&data.exp&&data.why&&data.expect)){
                 errorAlert('Please fill all the details');
             }else{
-        //         $.post("<?=base_url('regcs/register')?>",data,function(res,status){
-        //         $('#loading').hide();
-        //         $('.msg').hide();
-        //         console.log(res);
-        //         var result=$.parseJSON(res);
-        //         if(result.status==true){
-        //             setTimeout(function() {window.location.replace('/');}, 5000);
-        //         }
-        //         else
-        //             errorAlert('Something went wrong');
-        //     })
-                document.forms[0].submit()
+                $('#loading').show()
+                $.post("<?=base_url('regnoncs/register')?>",data,function(res,status){
+                $('#loading').hide();
+                console.log(res);
+                var result=$.parseJSON(res);
+                if(result.status==true){
+                    successAlert("Registration for Phase 1 successful. We will contact you if you're selected for Phase 2");
+                    document.forms[0].reset()    
+                }
+                else
+                    errorAlert('Something went wrong');
+                })
             }
         })
     })

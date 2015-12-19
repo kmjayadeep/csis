@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 11, 2015 at 08:07 PM
+-- Generation Time: Dec 19, 2015 at 05:44 PM
 -- Server version: 5.6.24
 -- PHP Version: 5.6.8
 
@@ -41,17 +41,21 @@ CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL,
   `name` varchar(30) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `password` text NOT NULL,
+  `phone` int(12) NOT NULL,
+  `sex` varchar(20) NOT NULL,
   `mtype` int(2) NOT NULL COMMENT '0 ->not member, 1 -> member, 2-> cs member',
   `mid` int(10) NOT NULL,
-  `section_id` int(2) NOT NULL,
+  `section` varchar(15) NOT NULL,
   `college` varchar(50) NOT NULL,
-  `food` int(1) NOT NULL DEFAULT '0',
+  `food` varchar(10) NOT NULL,
   `acco1` int(1) NOT NULL DEFAULT '0',
   `acco2` int(1) NOT NULL DEFAULT '0',
   `acco3` int(1) NOT NULL DEFAULT '0',
   `payment_status` int(2) NOT NULL DEFAULT '0',
-  `status` int(2) NOT NULL DEFAULT '0'
+  `status` int(2) NOT NULL DEFAULT '0',
+  `exp` varchar(1000) NOT NULL,
+  `why` varchar(1000) NOT NULL,
+  `expect` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
