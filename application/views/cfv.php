@@ -193,8 +193,8 @@
     </footer>
     <!--Footer end-->
 </div>
-<div id="loading"style="width:100%; height:100%; position:fixed; z-index:100; top:0; text-align:center; padding-top:30%; background: rgba(255,255,255,0.6); display:none;">
-    <img src="<?=base_url('assets')?>/img/loading.gif">
+<div id="loading"style="width:100%; height:100%; position:fixed; z-index:100; top:0; text-align:center; padding-top:25%; background: rgba(255,255,255,0.6)">
+    <img style="height:50%"src="<?=base_url('assets')?>/img/closed31.png">
 </div>
 <!--End content before Slider-->
 
