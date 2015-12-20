@@ -15,7 +15,7 @@
                 </button>
                 <!--Brand / Logo start-->
                 <a class="navbar-brand scroll-to" href="#page-top" style="height: 71px;padding-top: 0px;margin-top: 0px;padding-bottom:0px;">
-                    <img src="<?=base_url('assets')?>/ieee/logo.png" class="img-responsive" alt="Accommodation Landing Page" style="width:260px"/>
+                    <img src="<?=base_url('assets')?>/ieee/logo.png" class="img-responsive" style="width:260px"/>
                 </a>
                 <!--Brand / Logo end-->
             </div>
@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2  class="head1">REGISTRATION</h2>
+                    <h2 style="margin-bottom:13px" class="head1">REGISTRATION</h2>
  <section class="contact" id="sc-contact">
         <div class="container">
             <h2 style="margin-top:0px">For IEEE Computer Society Members</h2><br/>

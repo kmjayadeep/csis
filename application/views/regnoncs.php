@@ -15,7 +15,7 @@
                 </button>
                 <!--Brand / Logo start-->
                 <a class="navbar-brand scroll-to" href="#page-top" style="height: 71px;padding-top: 0px;margin-top: 0px;padding-bottom:0px;">
-                    <img src="<?=base_url('assets')?>/ieee/logo.png" class="img-responsive" alt="Accommodation Landing Page" style="width:260px"/>
+                    <img src="<?=base_url('assets')?>/ieee/logo.png" class="img-responsive" style="width:260px"/>
                 </a>
                 <!--Brand / Logo end-->
             </div>
@@ -44,10 +44,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2  class="head1">REGISTRATION</h2>
+                    <h2  style="margin-bottom:13px" class="head1">REGISTRATION</h2>
  <section class="contact" id="sc-contact">
         <div class="container">
-            <h2 style="margin-top:0px">For Non Computer Society Members</h2><br/>
+            <h2 style="margin-top:0px">For Non IEEE Computer Society Members</h2><br/>
             <form method="post" id="contact-form">
                 <input type="hidden" name="action" value="send_contact_form"/>
 
@@ -117,14 +117,8 @@
                             <input type="text" name="college" class="form-control" placeholder="College">
                         </div>
                         <br>
-
-                        <textarea name="exp" class="form-control" style="background:#F1F1F1" placeholder="Give us a short peek into your IEEE Volunteering experiences"></textarea>
+                        <textarea name="why"cols="10" rows="5" class="form-control" style="background:#F1F1F1" placeholder="what makes you a good candidate for IEEE CSIS (include your leadership experience in IEEE too, this question decides your selection to second phase)"></textarea>
                         <br/>
-                        <textarea name="why" class="form-control" style="background:#F1F1F1" placeholder="What makes you a good candidate for CSIS?"></textarea>
-                        <br/>
-                        <textarea name="expect" class="form-control" style="background:#F1F1F1" placeholder="What do you expect to gain from CSIS and other related events?"></textarea>
-                        <br/>
-
                         <p class="contact-form-info" style="float:none;margin-top:0;margin-bottom:0">* All fields are required.</p>
 
                         <div class="alert alert-danger msg" id="err">
@@ -202,13 +196,11 @@
             data.email = $('input[name="email"]').val()
             data.section = $('select[name="section"]').val()
             data.college = $('input[name="college"]').val()
-            data.exp = $('textarea[name="exp"]').val()
             data.why = $('textarea[name="why"]').val()
-            data.expect = $('textarea[name="expect"]').val()
             console.log(data)
 
 
-            if(!(data.name&&data.mtype&&data.sex&&data.phone&&data.email&&data.section&&data.college&&data.exp&&data.why&&data.expect)){
+            if(!(data.name&&data.mtype&&data.sex&&data.phone&&data.email&&data.section&&data.college&&data.why)){
                 errorAlert('Please fill all the details');
             }else{
                 $('#loading').show()
