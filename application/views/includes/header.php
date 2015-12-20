@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>IEEE Computer Science India Symposium</title>
     <meta name="description"
-          content="Accomodation is developed for hotels, motels, guest house and accommodation planning like Vacation Rentals, Homes, Apartments & Rooms and much more.">
+          content="IEEE Computer Society India Symposium">
     <meta name="author" content="Themeinjection.com">
 
     <!-- Bootstrap -->

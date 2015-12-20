@@ -1,3 +1,4 @@
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -127,9 +128,11 @@
                         <div class="alert alert-danger msg" id="wrong">
                             Something went wrong. Please try again
                         </div>
-
+                        <div class="alert alert-danger msg" id="nocap">
+                            Please Prove that you're not a robot
+                        </div>
                         <input type="hidden" name="register" value="1">
-
+                        <div style="padding-left: 25%;"id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
                         <button id="register" class="btn btn-color1 btn-contact-form">Register for Phase 1<i class="fa fa-angle-right"></i></button>
 
 
@@ -188,6 +191,7 @@
         $("#register").click(function(event){
             event.preventDefault()
             data = {}
+            data.response = grecaptcha.getResponse()
             data.name = $('input[name="name"]').val()
             data.mtype = $('select[name="mtype"]').val()
             data.mid = $('input[name="mid"]').val()
@@ -202,7 +206,12 @@
 
             if(!(data.name&&data.mtype&&data.sex&&data.phone&&data.email&&data.section&&data.college&&data.why)){
                 errorAlert('Please fill all the details');
-            }else{
+            }
+            else if(!data.response){
+                $('.msg').hide();
+                $('#nocap').slideDown();
+            }
+            else{
                 $('#loading').show()
                 $.post("<?=base_url('regnoncs/register')?>",data,function(res,status){
                 $('#loading').hide();

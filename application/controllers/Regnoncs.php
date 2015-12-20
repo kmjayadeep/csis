@@ -11,6 +11,44 @@ class Regnoncs extends CI_Controller {
 	}
 	public function register(){
 		// print_r($_REQUEST);
+		$captcha = array(
+        		'response'=>$this->input->post('response'),
+        		'secret'=> "6Lel2BITAAAAALgQHxnGgq52pMuDETpFy6aXiFIX"
+        	);
+
+        $url = "https://www.google.com/recaptcha/api/siteverify";
+
+		$fields_string = "";
+
+        foreach($captcha as $key=>$value) {
+	         $fields_string .= $key.'='.$value.'&'; 
+	    }
+
+		$fields_string = rtrim($fields_string,'&');
+
+
+        $ch = curl_init();
+		curl_setopt($ch,CURLOPT_URL,$url);
+		curl_setopt($ch,CURLOPT_POST,count($captcha));
+		curl_setopt($ch,CURLOPT_POSTFIELDS,$fields_string);
+ 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+		//execute post
+		$result = curl_exec($ch);
+
+
+		//close connection
+		curl_close($ch);
+
+
+		$res = json_decode($result);
+
+		$out = array();
+
+		if(!$res->success){
+			$out['status'] = false;
+			die(json_encode($out));
+		}
 		$data = array(
 				'name'=>$this->input->post('name'),
 				'email'=>$this->input->post('email'),
