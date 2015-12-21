@@ -149,6 +149,7 @@
                         </div>
 
                         <input type="hidden" name="register" value="1">
+                        <input type="hidden" name="response">
                         <div style="padding-left: 25%;"id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
                         <button id="register" class="btn btn-color1 btn-contact-form">Proceed to payment<i class="fa fa-angle-right"></i></button>
 
@@ -221,7 +222,7 @@
             data.acco2 = $('input[name="day2"]').is(':checked')
             data.acco3 = $('input[name="day3"]').is(':checked')
             console.log(data)
-
+            $('input[name=response]').val(data.response)
 
             if(!(data.name&&data.mid&&data.sex&&data.phone&&data.email&&data.section&&data.college&&data.food)){
                 errorAlert('Please fill all the details');

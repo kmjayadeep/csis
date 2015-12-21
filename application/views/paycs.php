@@ -52,7 +52,7 @@
             Hi <?=$name;?><br/>
             <p>Thank you for registering. Please proceed to pay the registration fee</p>
 
-            <h4>Total Amount Payable : &#x20B9<b></b>550 + Service charge</h4>
+            <h4>Total Amount Payable : &#x20B9<b></b>550 + &#x20B9<b></b><?=$acco?> + Service charge = &#x20B9<b></b><?=$total?></h4>
 
             <br/>
             <button onclick="popupTs()" class="btn btn-color1">Pay Now
@@ -114,9 +114,11 @@
             name: "<?=$name?>",
             email: "<?=$email?>",
             ticketname1:"IEEE CS Members",
-            ticketvalue1:"1"
+            ticketvalue1:"1",
+            ticketname2:"1 Day Accomodation",
+            ticketvalue2:"<?=$accotickets?>"
         };
-        var k = "https://www.townscript.com/widget/ieeecsis?name=" + data.name + "&emailid=" + data.email + "&" + data.ticketname1 + "=" + data.ticketvalue1;
+        var k = "https://www.townscript.com/widget/ieeecsis?name=" + data.name + "&emailid=" + data.email + "&" + data.ticketname1 + "=" + data.ticketvalue1+ "&" + data.ticketname2 + "=" + data.ticketvalue2;
         document.getElementById("popupcontents").innerHTML = '<iframe id="tsiframe" height="100%" width="100%" frameborder="0" scrolling="auto" src="' + k + '" type= "text/javascript"></iframe>', document.getElementById("popupbackground").style.display = "block", document.getElementById("popupcontainer").style.maxWidth = "630px"
     }
 </script

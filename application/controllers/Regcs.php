@@ -43,8 +43,7 @@ class Regcs extends CI_Controller {
 		$out = array();
 
 		if(!$res->success){
-			$out['status'] = false;
-			die(json_encode($out));
+			redirect('/regcs');
 		}
 			$data = array(
 				'name'=>$this->input->post('name'),
