@@ -1,3 +1,4 @@
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
@@ -64,9 +65,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
+	'hostname' => '104.245.33.9',
+	'username' => 'juggleclouds',
+	'password' => 'youcanthackthis',
 	'database' => 'csis',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',

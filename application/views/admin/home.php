@@ -6,7 +6,7 @@
                             </li>
                             <li>
                                 <a href="<?=base_url('admin/volunteers')?>">
-                                    <span class="icon fa fa-table"></span><span class="title">Volunteers</span>
+                                    <span class="icon fa fa-table"></span><span class="title">Delegates</span>
                                 </a>
                             </li>
                         </ul>

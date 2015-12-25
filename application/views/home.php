@@ -89,7 +89,7 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="feature">
                     <img src="<?=base_url('assets')?>/img/csslogo.png">
-                        <p><br/>The IEEE Computer Society Symposium 2016 focuses on bringing together and improving the future activities of the different chapters of Computer Societies all over India. The IEEE Computer Society Symposium provides the students with opportunities to interact with the esteemed speakers and professionals of the field from the various multidisciplinary workshops and talks facilitating the identification, creation, capture and exchange of highly peer-reviewed scientific and technological knowledge. Participants  also have the opportunity to match their wits in various competitions like web development and idea presentation and win fabulous prizes!</p>
+                        <p><br/>The IEEE Computer Society Symposium 2016 organized by IEEE CS Chapter CET in association with IEEE CS India council SAC focuses on bringing together and improving the future activities of the different chapters of Computer Societies all over India. The IEEE Computer Society Symposium provides the students with opportunities to interact with the esteemed speakers and professionals of the field from the various multidisciplinary workshops and talks facilitating the identification, creation, capture and exchange of highly peer-reviewed scientific and technological knowledge. Participants  also have the opportunity to match their wits in various competitions like web development and idea presentation and win fabulous prizes!</p>
                     </div>
                 </div>
                 <!--Feature 3 end-->
@@ -120,14 +120,85 @@
 
                 <div class="row">
                     <div class="col-md-6">
-                        <h2>SPEAKERS AND SESSIONS</h2>
+                        <h2>SPEAKERS AND WORKSHOPS</h2>
                     </div>
                         
+                <div class="carousel-inner" role="listbox">
+
+                    <div class="item active">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="review-box">
+                                    <h3>Prof. Lakshmi Narasimhan</h3>
+
+                                    <div class="review-person">
+                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/vl.jpg')?>" alt="Prof. Lakshmi Narasimhan"/>
+
+                                        <div class="review-person-name">Vice President at Srikar & Associates International</div>
+                                        <div class="review-person-location">    
+                                            <i onclick="location.href='https://www.linkedin.com/in/lakshmi-narasimhan-56948829';"class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="review-box">
+                                    <h3>Paramjeet Nagpal</h3>
+
+                                    <div class="review-person">
+                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/pn.png')?>" alt="Paramjeet Nagpal"/>
+
+                                        <div class="review-person-name">Sr. Technical Marketing Engineer,Intel Corporation</div>
+                                        <div class="review-person-location">    
+                                            <i onclick="location.href='https://www.linkedin.com/in/paramjeetnagpal';"class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <<!-- div class="item">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="review-box">
+                                    <h3>Under Construction</h3>
+
+                                    <p></p>
+
+                                    <div class="review-person">
+                                        <img class="review-person-image" src="img/review-person4.jpg" alt="Jahnatan Smith"/>
+
+                                        <div class="review-person-name"></div>
+                                        <div class="review-person-location">
+                                            <i class="icon-pointer"></i> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="review-box">
+                                    <h3>Under Construction</h3>
+
+                                    <p></p>
+
+                                    <div class="review-person">
+                                        <img class="review-person-image" src="img/review-person2.jpg" alt="Jahnatan Smith"/>
+
+                                        <div class="review-person-name"></div>
+                                        <div class="review-person-location">
+                                            <i class="icon-pointer"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <p style="color:white">More Speakers and workshops to be announced soon.....</p>
+                </div>
                     <!--Review Item end-->
                 </div>
-                <div class="col-md-6" >
-                                <p style="color:white">Speakers and sessions will be announced soon...</p>
-                            </div>
 
             </div>
         </div>
@@ -146,7 +217,12 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h2  class="head1">REGISTRATION</h2>
-                
+                    <h4>Registration will be direct for Computer Society members and two tier for others. Registration fees for participants will be as follows.</h4>
+                    <h4>CS Members: ₹550</h4>
+                    <h4>IEEE Members: ₹900</h4>
+                    <h4>Non-IEEE Members: ₹1100</h4>
+                    <button onclick="location.href='/regcs';" style="float:left"class="btn btn-color1 btn-contact-form col-md-5">IEEE CS Members <i class="fa fa-angle-right"></i></button>
+                    <button onclick="location.href='/regnoncs';"style="float:right"class="btn btn-color1 btn-contact-form col-md-5">Non IEEE CS Members <i class="fa fa-angle-right"></i></button>
  <!-- <section class="contact" id="sc-contact">
         <div class="container">
             <form action="#" id="contact-form">
@@ -181,10 +257,6 @@
     </section> -->
                 </div>
             </div>
-            <div class="col-md-10 col-md-offset-1" >
-                                <p>Registration will be one-point for IEEE Computer Society members and two-point for non Computer Society members (IEEE & non-IEEE members).
-Registration will start soon, so stay tuned to our FB page...</p>
-                            </div>
 
         </div>
     </section>

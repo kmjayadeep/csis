@@ -62,17 +62,18 @@
                         <br>
                                         <div class="input-group">
                         <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
-                          <select name="mtype" style="color: #57BCCA"class="form-control">
+                          <select name="mtype" onchange="if (this.selectedIndex==1){ $('#br').show();$('#m_id').slideDown(); }else { $('#br').hide();$('#m_id').slideUp(); } " style="color: #57BCCA"class="form-control">
                                 <option disabled="disabled" selected="selected">Membership Type</option>
                                 <option value="1">IEEE Member</option>
                                 <option value="0">Non IEEE Member</option>
                             </select>
                         </div>
-                        <br>
+                        <br style="display:none"id="br">
 
-                        <div class="input-group">
+                        <div class="input-group msg" id="m_id">
+                            
                             <span class="input-group-addon"><i class="fa fa-barcode fa-fw"></i></span>
-                            <input type="number" name="mid" class="form-control" placeholder="Membership Id">
+                            <input type="number" name="mid" class="form-control" placeholder="Membership ID">
                         </div>
                         <br>
                         <div class="input-group">
@@ -92,7 +93,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                            <input type="email" name="email" class="form-control" placeholder="Email Id">
+                            <input type="email" name="email" class="form-control" placeholder="Email ID">
                         </div>
                         <br>
                         <div class="input-group">
@@ -118,7 +119,9 @@
                             <input type="text" name="college" class="form-control" placeholder="College">
                         </div>
                         <br>
-                        <textarea name="why"cols="10" rows="5" class="form-control" style="background:#F1F1F1" placeholder="what makes you a good candidate for IEEE CSIS (include your leadership experience in IEEE too, this question decides your selection to second phase)"></textarea>
+                        <textarea name="why"cols="10" maxlength="600" rows="5" class="form-control" style="background:#F1F1F1" placeholder="What makes you a good candidate for IEEE CSIS? (include your leadership experience in IEEE too, this question decides your selection to second phase)"></textarea>
+                        <br/>
+                        <textarea name="what"cols="10" rows="5" maxlength="600" class="form-control" style="background:#F1F1F1" placeholder="What skills would you like to develop in the field of Computer Science?"></textarea>
                         <br/>
                         <p class="contact-form-info" style="float:none;margin-top:0;margin-bottom:0">* All fields are required.</p>
 
@@ -132,7 +135,7 @@
                             Please Prove that you're not a robot
                         </div>
                         <input type="hidden" name="register" value="1">
-                        <div style="padding-left: 25%;"id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
+                        <div id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
                         <button id="register" class="btn btn-color1 btn-contact-form">Register for Phase 1<i class="fa fa-angle-right"></i></button>
 
 
@@ -201,6 +204,9 @@
             data.section = $('select[name="section"]').val()
             data.college = $('input[name="college"]').val()
             data.why = $('textarea[name="why"]').val()
+            data.what = $('textarea[name="what"]').val()
+            if(!data.mid)
+                data.mid="1"
             console.log(data)
 
 

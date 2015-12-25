@@ -16,8 +16,6 @@ class Paymentcs extends CI_Controller {
 
 		if($data['acco1']=='1')
 			$acco++;
-		if($data['acco2']=='1')
-			$acco++;
 		if($data['acco3']=='1')
 			$acco++;
 

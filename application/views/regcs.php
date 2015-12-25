@@ -62,7 +62,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-barcode fa-fw"></i></span>
-                            <input type="number" name="mid" class="form-control" placeholder="Membership Id">
+                            <input type="number" name="mid" class="form-control" placeholder="Membership ID">
                         </div>
                         <br>
                         <div class="input-group">
@@ -81,7 +81,7 @@
                         <br>
                         <div class="input-group">
                             <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
-                            <input type="email" name="email" class="form-control" placeholder="Email Id">
+                            <input type="email" name="email" class="form-control" placeholder="Email ID">
                         </div>
                         <br>
                         <div class="input-group">
@@ -150,7 +150,7 @@
 
                         <input type="hidden" name="register" value="1">
                         <input type="hidden" name="response">
-                        <div style="padding-left: 25%;"id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
+                        <div id="cap"class="g-recaptcha" data-sitekey="6Lel2BITAAAAALzZCjscDnfBWs7KfSYl_0rJ19FF"></div>
                         <button id="register" class="btn btn-color1 btn-contact-form">Proceed to payment<i class="fa fa-angle-right"></i></button>
 
 

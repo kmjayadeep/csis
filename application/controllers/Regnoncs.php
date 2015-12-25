@@ -59,6 +59,7 @@ class Regnoncs extends CI_Controller {
 				'section'=>$this->input->post('section'),
 				'college'=>$this->input->post('college'),
 				'why'=>$this->input->post('why'),
+				'what'=>$this->input->post('what'),
 				'payment_status'=>0,
 				'status'=>0
 		);
