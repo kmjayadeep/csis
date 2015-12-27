@@ -164,9 +164,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="item">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="review-box">
@@ -205,7 +202,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                        
+                    </div>
+
+                    
                     <p style="color:white">More Speakers and workshops to be announced soon.....</p>
                 </div>
                     <!--Review Item end-->
