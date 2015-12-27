@@ -116,7 +116,7 @@
  <!--Reviews start-->
     <section class="reviews" id="sc-reviews">
         <div class="container">
-            <div id="review-slider" class="carousel slide" data-ride="carousel">
+            <div id="review-slider" class="carousel slide" data-ride="carousel" data-interval="3000">
 
                 <div class="row">
                     <div class="col-md-6">
@@ -129,14 +129,17 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="review-box">
-                                    <h3>Prof. Lakshmi Narasimhan</h3>
+                                    <!-- <h3>Prof. Lakshmi Narasimhan</h3> -->
 
                                     <div class="review-person">
                                         <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/vl.jpg')?>" alt="Prof. Lakshmi Narasimhan"/>
 
-                                        <div class="review-person-name">Vice President at Srikar & Associates International</div>
-                                        <div class="review-person-location">    
-                                            <i onclick="location.href='https://www.linkedin.com/in/lakshmi-narasimhan-56948829';"class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        <div class="review-person-name">Prof. Lakshmi Narasimhan
+                                        <h5>Vice President at Srikar & Associates International</h5></div>
+                                        <div class="review-person-location"> 
+                                        <a href="https://www.linkedin.com/in/lakshmi-narasimhan-56948829">
+                                            <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        </a>   
                                         </div>
                                     </div>
                                 </div>
@@ -144,14 +147,18 @@
 
                             <div class="col-md-6">
                                 <div class="review-box">
-                                    <h3>Paramjeet Nagpal</h3>
+                                    <!-- <h3>Paramjeet Nagpal</h3> -->
 
                                     <div class="review-person">
                                         <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/pn.png')?>" alt="Paramjeet Nagpal"/>
 
-                                        <div class="review-person-name">Sr. Technical Marketing Engineer,Intel Corporation</div>
-                                        <div class="review-person-location">    
-                                            <i onclick="location.href='https://www.linkedin.com/in/paramjeetnagpal';"class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        <div class="review-person-name">Paramjeet Nagpal
+
+                                        <h5>Sr. Technical Marketing Engineer,Intel Corporation</h5></div>
+                                        <div class="review-person-location">
+                                        <a href="https://www.linkedin.com/in/paramjeetnagpal">
+                                            <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        </a>    
                                         </div>
                                     </div>
                                 </div>
@@ -159,42 +166,46 @@
                         </div>
                     </div>
 
-                    <<!-- div class="item">
+                    <div class="item">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="review-box">
-                                    <h3>Under Construction</h3>
-
-                                    <p></p>
+                                    <!-- <h3>Kiran Rajmohan</h3> -->
 
                                     <div class="review-person">
-                                        <img class="review-person-image" src="img/review-person4.jpg" alt="Jahnatan Smith"/>
+                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/kiran.jpeg')?>" alt="Kiran Rajmohan"/>
 
-                                        <div class="review-person-name"></div>
+                                        <div class="review-person-name">Kiran Rajmohan
+                                        <h5>Analog Design Engineer at Texas Instruments</h5></div>
+
                                         <div class="review-person-location">
-                                            <i class="icon-pointer"></i> 
+                                        <a href="https://www.linkedin.com/in/kiranrajmohan">
+                                            <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        </a>    
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="review-box">
-                                    <h3>Under Construction</h3>
-
-                                    <p></p>
+                                    <!-- <h3>Kiran Rajmohan</h3> -->
 
                                     <div class="review-person">
-                                        <img class="review-person-image" src="img/review-person2.jpg" alt="Jahnatan Smith"/>
+                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/gp.png')?>" alt="Gowtham Prasad"/>
 
-                                        <div class="review-person-name"></div>
+                                        <div class="review-person-name">Gowtham Prasad
+                                        <h5>Azure Strategy and Planning Lead at Microsoft</h5></div>
+
                                         <div class="review-person-location">
-                                            <i class="icon-pointer"></i>
+                                        <a href="https://www.linkedin.com/in/gowthamprasadkn" >
+                                            <i class="fa fa-linkedin-square" style="font-size:30px"></i>
+                                        </a>    
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div> -->
+                    </div> 
                     <p style="color:white">More Speakers and workshops to be announced soon.....</p>
                 </div>
                     <!--Review Item end-->
@@ -220,9 +231,13 @@
                     <h4>Registration will be direct for Computer Society members and two tier for others. Registration fees for participants will be as follows.</h4>
                     <h4>CS Members: ₹550</h4>
                     <h4>IEEE Members: ₹900</h4>
-                    <h4>Non-IEEE Members: ₹1100</h4>
-                    <button onclick="location.href='/regcs';" style="float:left"class="btn btn-color1 btn-contact-form col-md-5">IEEE CS Members <i class="fa fa-angle-right"></i></button>
-                    <button onclick="location.href='/regnoncs';"style="float:right"class="btn btn-color1 btn-contact-form col-md-5">Non IEEE CS Members <i class="fa fa-angle-right"></i></button>
+                    <h4 style="margin-bottom:25px">Non-IEEE Members: ₹1100</h4>
+                    <div class="col-md-6">
+                        <button onclick="location.href='/regcs';" style="float:right;"class="btn btn-color1 btn-contact-form col-md-6">IEEE CS Members <i class="fa fa-angle-right"></i></button>
+                    </div>
+                    <div class="col-md-6" >
+                    <button onclick="location.href='/regnoncs';" class="btn btn-color1 btn-contact-form col-md-6 ">Non IEEE CS Members <i class="fa fa-angle-right"></i></button> 
+                    </div>
  <!-- <section class="contact" id="sc-contact">
         <div class="container">
             <form action="#" id="contact-form">
