@@ -47,7 +47,7 @@
                 <img src="<?=base_url('assets')?>/ieee/header.jpg" >
             </div>
 
-            <div id="countdown">
+            <!-- <div id="countdown">
                 
                 <div class="count-head">
                     See you in
@@ -81,7 +81,7 @@
 
                 </div>
 
-            </div>
+            </div> -->
         
 </section>
 <div class="teaser-slider-ph"></div>
@@ -332,7 +332,9 @@
 ​Accommodation is provided at Mar Gregarious ​Renewal Centre for Boys and Girls. More details on travel from Railway Station/Airport will be updated later.
 
                     </div>
-                       
+                       <div class="col-md-6">
+                        <button onclick="location.href='/travel';" style="float:right;"class="btn btn-color1 btn-contact-form col-md-6">Train Details<i class="fa fa-angle-right"></i></button>
+                    </div>
                     </form>
 
                 </div>
