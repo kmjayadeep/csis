@@ -46,6 +46,42 @@
             <div class="item active">
                 <img src="<?=base_url('assets')?>/ieee/header.jpg" >
             </div>
+
+            <div id="countdown">
+                
+                <div class="count-head">
+                    See you in
+                </div>
+
+                <div class="count-event">
+                    <div class="count-timer days">
+                    </div>
+                    <div class="count-timer hours">
+                    </div>
+                    <div class="count-timer minutes">
+                    </div>
+                    <div class="count-timer seconds">
+                    </div>
+                </div>
+
+
+                <div class="count-footer">
+                    <div class="count-footer-tag">
+                        Days
+                    </div>
+                    <div class="count-footer-tag">
+                        Hours    
+                    </div>
+                    <div class="count-footer-tag">
+                        Mins
+                    </div>
+                    <div class="count-footer-tag">
+                        Secs
+                    </div>
+
+                </div>
+
+            </div>
         
 </section>
 <div class="teaser-slider-ph"></div>
@@ -743,3 +779,28 @@
 
 
 <script src="<?=base_url('assets/')?>/js/custom.js"></script>
+<script src="<?=base_url('assets/')?>/js/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+
+
+    var days = $('.count-timer.days');
+    var hours = $('.count-timer.hours');
+    var minutes = $('.count-timer.minutes');
+    var seconds = $('.count-timer.seconds');
+
+    $(window).ready(function(){
+
+     $('#countdown').countdown('2016/02/28 09:00', function(event) {
+
+
+        days.html(event.offset.totalDays)
+        hours.html(event.offset.hours)
+        minutes.html(event.offset.minutes)
+        seconds.html(event.offset.seconds)
+
+    });
+
+
+
+    })
+</script>

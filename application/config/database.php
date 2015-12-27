@@ -65,7 +65,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '104.245.33.9',
+	'hostname' => 'localhost',
 	'username' => 'juggleclouds',
 	'password' => 'youcanthackthis',
 	'database' => 'csis',

@@ -2860,3 +2860,43 @@ footer:after {
   width:220px !important;
   padding-top: 10px;
 }
+
+#countdown{
+  position: absolute;
+  top:8em;
+  left:1em;
+}
+
+.count-head{
+  text-align: center;
+  font-weight: bold;
+}
+
+.count-event .count-timer {
+    width: 2em;
+    background: #000 none repeat scroll 0% 0%;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.5em;
+    float: left;
+    height: 3em;
+    vertical-align: center;
+    padding-top: 1em;
+    margin: 0.1em;
+    font-family: "Open Sans";
+    border: 1px solid #ccc;
+    border-radius: 0.2em;
+}
+.count-event:after,.count-footer:after{
+  content: " ";
+  display: table;
+  clear:both;
+}
+.count-footer .count-footer-tag{
+  width: 3em;
+  height: 1.4em;
+  text-align: center;
+  float: left;
+  font-family: "Roboto Condensed";
+  margin: 0.17em;
+}

@@ -17,7 +17,7 @@
     <link href="<?=base_url('assets/')?>/bower_components/bootstrap-3-datepicker/dist/css/bootstrap-datepicker.min.css" rel='stylesheet' type='text/css'>
 
     <!-- Google Open Sans Font -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Roboto+Condensed' rel='stylesheet' type='text/css'>
 
     <!-- Font Awesome -->
     <link href="<?=base_url('assets/')?>/bower_components/font-awesome/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
