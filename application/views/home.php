@@ -268,10 +268,11 @@
                     <h4>CS Members: ₹550</h4>
                     <h4>IEEE Members: ₹900</h4>
                     <h4 style="margin-bottom:25px">Non-IEEE Members: ₹1100</h4>
-                    <div class="col-md-6">
-                        <button onclick="location.href='/regcs';" style="float:right;"class="btn btn-color1 btn-contact-form col-md-6">IEEE CS Members <i class="fa fa-angle-right"></i></button>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <button onclick="location.href='/regcs';"class="btn btn-color1 btn-contact-form col-md-6">IEEE CS Members <i class="fa fa-angle-right"></i></button>
                     </div>
-                    <div class="col-md-6" >
+                    <div class="col-md-5" >
                     <button onclick="location.href='/regnoncs';" class="btn btn-color1 btn-contact-form col-md-6 ">Non IEEE CS Members <i class="fa fa-angle-right"></i></button> 
                     </div>
  <!-- <section class="contact" id="sc-contact">

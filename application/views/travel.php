@@ -46,7 +46,7 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                      <div class="page-title">
-                        <h2>Banglore</h2>
+                        <h2>Banglore Section</h2>
                         <div class="description"></div>
                     </div>
     <div class="row">
@@ -124,6 +124,148 @@
                                                 <td>%:00 PM</td>
                                                 <td>Monday</td>
                                             </tr>
+                                            
+                                        </tbody>
+                                        </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                     <div class="page-title">
+                        <h2>Madras Section</h2>
+                        <div class="description"></div>
+                    </div>
+    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="card" style="overflow-x:scroll">
+                                <div class="card-header">
+
+                                    <div class="card-title">
+                                    <!-- <div class="title"></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="datatable table table-striped" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align:center">Train No.</th>
+                                                <th style="text-align:center">Train Name</th>
+                                                <th style="text-align:center">Arrival Time</th>
+                                                <th style="text-align:center">Arrival Day</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="text-align:center; font-weight:bold">
+                                                
+                                                <td colspan="4">From Chennai</td>
+                                            </tr>
+                                            <tr><td>16127</td>   <td>Chennai Egmore-Guruvayur Exp </td>                   <td>11:05PM </td>    <td>Friday</td></tr>
+                                            <tr><td>12695</td>   <td>Trivandrum Express    </td>              <td>07:35AM </td>    <td>Saturday</td></tr>
+                                            <tr><td>16723</td>   <td>Ananthapuri Express    </td>             <td>12:10PM </td>    <td>Friday</td></tr>
+                                            <tr><td>22647</td>   <td>Korba Trivandrum Exp   </td>                 <td>05:15PM  </td>   <td>Friday</td></tr>
+
+                                            
+                                        </tbody>
+
+                                        
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <table class="datatable table table-striped" cellspacing="0" width="100%">
+                                    <thead>
+                                            <tr>
+                                                <th style="text-align:center">Train No.</th>
+                                                <th style="text-align:center">Train Name</th>
+                                                <th style="text-align:center">Departure Time</th>
+                                                <th style="text-align:center">Departure Day</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="text-align:center; font-weight:bold">
+                                                
+                                                <td colspan="4">To Chennai</td>
+                                            </tr>
+                                            <tr><td>16128</td>   <td>Guruvayur Chennai Egmore </td>                   <td>03:40AM </td>    <td>Monday</td></tr>
+                                            <tr><td>22648</td>   <td>Korba Express </td>                  <td>06:10AM </td>    <td>Monday</td></tr>
+                                            <tr><td>12624</td>   <td>Chennai Mail </td>                   <td>02:50PM </td>    <td>Monday</td></tr>
+                                            <tr><td>16724</td>   <td>Ananthapuri Express  </td>               <td>04:10PM  </td>   <td>Monday</td></tr>
+                                            <tr><td>12696</td>   <td>Trivandrum Chennai SF Exp  </td>                 <td>05:15PM </td>    <td>Monday or Sunday</td></tr>
+
+                                            
+                                        </tbody>
+                                        </table>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                     <div class="page-title">
+                        <h2>Bombay Section</h2>
+                        <div class="description"></div>
+                    </div>
+    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="card" style="overflow-x:scroll">
+                                <div class="card-header">
+
+                                    <div class="card-title">
+                                    <!-- <div class="title"></div> -->
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <table class="datatable table table-striped" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th style="text-align:center">Train No.</th>
+                                                <th style="text-align:center">Train Name</th>
+                                                <th style="text-align:center">Arrival Time</th>
+                                                <th style="text-align:center">Arrival Day</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="text-align:center; font-weight:bold">
+                                                
+                                                <td colspan="4">From Bombay</td>
+                                            </tr>
+                                            <tr><td>12218</td>   <td>Kerala Sampark Kranti Exp(Kochuveli)</td>                <td>02:45PM</td>     <td>Friday</td></tr>
+                                            <tr><td>16345</td>   <td>Netravathi Exp</td>              <td>5:55PM</td>      <td>Friday</td></tr>
+
+                                            
+                                        </tbody>
+
+                                        
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <table class="datatable table table-striped" cellspacing="0" width="100%">
+                                    <thead>
+                                            <tr>
+                                                <th style="text-align:center">Train No.</th>
+                                                <th style="text-align:center">Train Name</th>
+                                                <th style="text-align:center">Departure Time</th>
+                                                <th style="text-align:center">Departure Day</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr style="text-align:center; font-weight:bold">
+                                                
+                                                <td colspan="4">To Bombay</td>
+                                            </tr>
+                                            <tr><td>16382   <td>Kanykumari Mumbai Exp </td>              <td>8:55AM    </td>  <td>Monday</td></tr>
+                                            <tr><td>12217   <td>Kerala Sampark Kranti Exp(Kochuveli) </td>               <td>9:20AM </td>     <td>Monday</td></tr>
+                                            <tr><td>16346   <td>Netravathi Express   </td>           <td>9:50AM </td>     <td>Monday</td></tr>
+                                            <tr><td>19577   <td>Thirunelveli-Happa Exp </td>             <td>10:55AM  </td>   <td>Monday</td></tr>
+                                            <tr><td>16334   <td>Trivandrum-Veravel Exp </td>             <td>3:35PM   </td>   <td>Monday</td></tr>
+
                                             
                                         </tbody>
                                         </table>
