@@ -1,3 +1,4 @@
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <div id="page-top"></div>
@@ -47,7 +48,21 @@
                 <img src="<?=base_url('assets')?>/ieee/header.jpg" >
             </div>
 
-            <!-- <div id="countdown">
+        
+</section>
+<div class="teaser-slider-ph"></div>
+<!--Teaser Slider end-->
+
+<!--Start content before Slider-->
+<div class="content-after-slider">
+
+
+    <!--Features start-->
+    <section class="features" id="sc-features" style="padding-top: 18px;">
+ 
+
+
+            <div id="countdown">
                 
                 <div class="count-head">
                     See you in
@@ -81,22 +96,14 @@
 
                 </div>
 
-            </div> -->
-        
-</section>
-<div class="teaser-slider-ph"></div>
-<!--Teaser Slider end-->
+            </div>
 
-<!--Start content before Slider-->
-<div class="content-after-slider">
-
-
-    <!--Features start-->
-    <section class="features" id="sc-features" style="padding-top: 18px;">
         <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <h2>ABOUT</h2>
+                    <div class="col-md-12">
+                    <br/>
+                    <br/>
+                        <h2 class="text-center">ABOUT</h2>
                     </div>
             </div>
             <div class="row">
@@ -168,7 +175,7 @@
                                     <!-- <h3>Prof. Lakshmi Narasimhan</h3> -->
 
                                     <div class="review-person">
-                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/vl.jpg')?>" alt="Prof. Lakshmi Narasimhan"/>
+                                        <img style=""class="review-person-image" src="<?=base_url('assets/img/vl.jpg')?>" alt="Prof. Lakshmi Narasimhan"/>
 
                                         <div class="review-person-name">Prof. Lakshmi Narasimhan
                                         <h5>Vice President at Srikar & Associates International</h5></div>
@@ -186,7 +193,7 @@
                                     <!-- <h3>Paramjeet Nagpal</h3> -->
 
                                     <div class="review-person">
-                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/pn.png')?>" alt="Paramjeet Nagpal"/>
+                                        <img style=""class="review-person-image" src="<?=base_url('assets/img/pn.png')?>" alt="Paramjeet Nagpal"/>
 
                                         <div class="review-person-name">Paramjeet Nagpal
 
@@ -206,7 +213,7 @@
                                     <!-- <h3>Kiran Rajmohan</h3> -->
 
                                     <div class="review-person">
-                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/kiran.jpeg')?>" alt="Kiran Rajmohan"/>
+                                        <img style=""class="review-person-image" src="<?=base_url('assets/img/kiran.jpeg')?>" alt="Kiran Rajmohan"/>
 
                                         <div class="review-person-name">Kiran Rajmohan
                                         <h5>Analog Design Engineer at Texas Instruments</h5></div>
@@ -224,7 +231,7 @@
                                     <!-- <h3>Kiran Rajmohan</h3> -->
 
                                     <div class="review-person">
-                                        <img style="height:100px; width:100px"class="review-person-image" src="<?=base_url('assets/img/gp.png')?>" alt="Gowtham Prasad"/>
+                                        <img style=""class="review-person-image" src="<?=base_url('assets/img/gp.png')?>" alt="Gowtham Prasad"/>
 
                                         <div class="review-person-name">Gowtham Prasad
                                         <h5>Azure Strategy and Planning Lead at Microsoft</h5></div>
