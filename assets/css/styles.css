@@ -36,9 +36,9 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 body {
-  font-family: 'Oswald';
+  font-family: 'Open Sans', sans-serif;
   color: #585858;
-  line-height: 25px;
+  line-height: 20px;
   font-weight: 400;
 }
 h1,
