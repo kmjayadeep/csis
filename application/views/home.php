@@ -58,11 +58,11 @@
 
 
     <!--Features start-->
-    <section class="features" id="sc-features" style="padding-top: 18px;">
+    <section class="features mymargin" id="sc-features" style="padding-top: 18px;">
  
 
 
-            <div id="countdown">
+            <div id="countdown" class="visible-lg visible-md">
                 
                 <div class="count-head">
                     See you in
@@ -132,7 +132,8 @@
                 <div class="col-md-3 col-sm-6">
                     <div class="feature">
                     <img src="<?=base_url('assets')?>/img/csslogo.png">
-                        <p><br/>The IEEE Computer Society Symposium 2016 organized by IEEE CS Chapter CET in association with IEEE CS India council SAC focuses on bringing together and improving the future activities of the different chapters of Computer Societies all over India. The IEEE Computer Society Symposium provides the students with opportunities to interact with the esteemed speakers and professionals of the field from the various multidisciplinary workshops and talks facilitating the identification, creation, capture and exchange of highly peer-reviewed scientific and technological knowledge. Participants  also have the opportunity to match their wits in various competitions like web development and idea presentation and win fabulous prizes!</p>
+                        <p><br/>The IEEE Computer Society India Symposium 2016 is jointly organized by IEEE Computer Society Chapter of CET and IEEE Computer Society India SAC. It focuses on bringing together and improving the future activities of the different chapters of IEEE Computer Society all over India. The IEEE Computer Society India Symposium provides the students with opportunities to interact with
+the esteemed speakers and professionals of the field from the various multidisciplinary workshops and talks facilitating the identification, creation, capture and exchange of highly peer-reviewed scientific and technological knowledge. Participants also have the opportunity to match their wits in various competitions like The ARENA (Project Competition) , RACK-your-BRAINS (IT Quiz) , SPARK (Idea Presentation Competition) and win fabulous prizes!</p>
                     </div>
                 </div>
                 <!--Feature 3 end-->
@@ -275,6 +276,7 @@
                     <h4>CS Members: ₹550</h4>
                     <h4>IEEE Members: ₹900</h4>
                     <h4 style="margin-bottom:25px">Non-IEEE Members: ₹1100</h4>
+                    <h5 style="margin-bottom:25px">**Accomodation for 27th Feb is included in the registration fee. For accomodation on 26th and 28th, an amount of ₹100/day should be paid</h5>
                     <div class="col-md-2"></div>
                     <div class="col-md-5">
                         <button onclick="location.href='/regcs';"class="btn btn-color1 btn-contact-form col-md-6">IEEE CS Members <i class="fa fa-angle-right"></i></button>
@@ -340,9 +342,7 @@
 ​Accommodation is provided at Mar Gregarious ​Renewal Centre for Boys and Girls. More details on travel from Railway Station/Airport will be updated later.
 
                     </div>
-                       <div class="col-md-6">
-                        <button onclick="location.href='/travel';" style="float:right;"class="btn btn-color1 btn-contact-form col-md-6">Train Details<i class="fa fa-angle-right"></i></button>
-                    </div>
+                       
                     </form>
 
                 </div>
@@ -460,7 +460,7 @@
             <div class="row">
                 <div class="col-md-6">
                     <p class="footer-copyright">
-                        &copy;  IEEE CET Computer Society Chapter Web Team.
+                        &copy;  IEEE Computer Society CET Chapter WebD Team
                     </p>
                 </div>
                 <div class="col-md-6">

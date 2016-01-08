@@ -960,6 +960,14 @@ h6 {
 }
 /* 14. Counter
 -------------------------------------*/
+.mymargin{
+    margin-top: 150px;
+  }
+@media (max-width: 768px) {
+  .mymargin{
+    margin-top: 0px;
+  }
+}
 .counter {
   padding: 85px 0;
   background-color: #eaf5f7;
