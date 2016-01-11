@@ -63,7 +63,12 @@ class Regnoncs extends CI_Controller {
 				'payment_status'=>0,
 				'status'=>0
 		);
-		$this->db->insert('users',$data);
+
+		$r = $this->db->get_where('users',array('email'=>$data['email']));
+ 		if($r->num_rows()==1)
+			$this->db->update('users',$data,array('email'=>$data['email']));
+		else
+			$this->db->insert('users',$data);
 		if($this->db->affected_rows()==1){
 			echo json_encode(array('status'=>true));
 		}else

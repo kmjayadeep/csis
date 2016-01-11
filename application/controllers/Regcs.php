@@ -73,7 +73,14 @@ class Regcs extends CI_Controller {
 				$data['acco3'] = 1;
 			else
 				$data['acco3'] = 0;
- 			$this->db->insert('users',$data);
+
+
+			$r = $this->db->get_where('users',array('email'=>$data['email']));
+
+			if($r->num_rows()==1)
+				$this->db->update('users',$data,array('email'=>$data['email']));
+			else
+	 			$this->db->insert('users',$data);
 			if($this->db->affected_rows()==1){
 				$this->session->set_userdata('email',$data['email']);
 				redirect('/paymentcs');
