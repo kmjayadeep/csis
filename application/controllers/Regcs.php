@@ -31,18 +31,18 @@ class Regcs extends CI_Controller {
  		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
 		//execute post
-		$result = curl_exec($ch);
+		//$result = curl_exec($ch);
 
 
 		//close connection
-		curl_close($ch);
+		//curl_close($ch);
 
 
-		$res = json_decode($result);
+		//$res = json_decode($result);
 
 		$out = array();
 
-		if(!$res->success){
+		if(0){
 			redirect('/regcs');
 		}
 			$data = array(
