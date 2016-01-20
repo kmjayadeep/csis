@@ -74,4 +74,87 @@ class Regnoncs extends CI_Controller {
 		}else
 			echo json_encode(array('status'=>false));
 	}
+
+	public function p2(){
+		$this->load->library('session');
+		$data = array('alert'=>'');
+
+		if($this->input->post('register')){
+			$data = array(
+				'food'=>$this->input->post('food'),
+				'acco1'=>$this->input->post('day1'),
+				'acco2'=>$this->input->post('day2'),
+				'acco3'=>$this->input->post('day3'),
+				'payment_status'=>0,
+				'status'=>2
+				);
+			$email = $this->input->post('email');
+			if($data['acco1']=='on')
+				$data['acco1'] = 1;
+			else
+				$data['acco1'] = 0;
+			if($data['acco2']=='on')
+				$data['acco2'] = 1;
+			else
+				$data['acco2'] = 0;
+			if($data['acco3']=='on')
+				$data['acco3'] = 1;
+			else
+				$data['acco3'] = 0;
+
+
+			$r = $this->db->get_where('users',array('email'=>$email,'status'=>1,'payment_status'=>0));
+			if($r->num_rows()==1){
+				$this->db->update('users',$data,array('email'=>$email));
+				$this->session->set_userdata('email',$email);
+				redirect('/regnoncs/payment');
+			}else{
+				$data['alert'] = 'Sorry, You aren\'t selected for phase 2 registration';
+			}
+		}
+		$this->load->view('includes/header');
+		$this->load->view('regp2',$data);
+		$this->load->view('includes/footer');
+	}
+
+	public function payment(){
+		$this->load->library('session');
+		$email = $this->session->email;
+		if(!$email)
+			redirect('/regnoncs/p2');
+
+
+		$data = $this->db->get_where('users',array('email'=>$email))->row_array();
+
+		$acco = 0;
+
+		if($data['acco1']=='1')
+			$acco++;
+		if($data['acco3']=='1')
+			$acco++;
+
+		$data['acco'] = $acco*100;
+
+		$data['accotickets'] = $acco;
+
+		if($data['mtype']==1){
+			$data['ticket'] = 'IEEE Members';
+			$mem = 900;
+		}
+		else{
+			$data['ticket'] = 'Non IEEE Members';
+			$mem = 1100;
+		}
+
+		$data['mem'] = $mem;
+
+		$data['total'] = round(($data['acco']+$mem)*102.987/100,2);
+
+		$this->load->view('includes/header');
+		$this->load->view('paynoncs',$data);
+		$this->load->view('includes/footer');
+
+
+	}
 }
+
