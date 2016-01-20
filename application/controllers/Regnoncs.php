@@ -103,7 +103,7 @@ class Regnoncs extends CI_Controller {
 				$data['acco3'] = 0;
 
 
-			$r = $this->db->get_where('users',array('email'=>$email,'status'=>1,'payment_status'=>0));
+			$r = $this->db->get_where('users',array('email'=>$email,'status>='=>'1'));
 			if($r->num_rows()==1){
 				$this->db->update('users',$data,array('email'=>$email));
 				$this->session->set_userdata('email',$email);
